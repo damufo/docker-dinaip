@@ -1,0 +1,12 @@
+name: docker-dinaip
+services:
+    docker-dinaip:
+        environment:
+            - DHUSER=${DINAIP_USERNAME}
+            - DHPASS=${DINAIP_PASSWORD}
+        volumes:
+            - ${DINAIP_CONFIG_FOLDER}:/var/persistent
+        image: vrdominguez/dinaip:alpine
+        container_name: docker-dinaip
+        restart: unless-stopped
+
