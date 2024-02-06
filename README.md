@@ -41,13 +41,17 @@ docker exec -ti container_name_or_id dinaip -d
 
 ## docker-compose
 
-docker compose up docker-dinaip -d 
+Contaier name is dinaip
+
+### up
+
+docker compose up dinaip -d 
 
 or
 
-docker-compose up docker-dinaip -d
+docker-compose up dinaip -d
 
-### remove contaier and image
+## remove contaier and image
 docker ps -as
 docker rm f7
 docker rmi d2
