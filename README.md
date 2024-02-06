@@ -38,3 +38,17 @@ docker exec -ti container_name_or_id dinaip -d
 ```
 
 **WARNING:** With docker stop you will miss your configuration
+
+## docker-compose
+
+docker compose up docker-dinaip -d 
+
+or
+
+docker-compose up docker-dinaip -d
+
+### remove contaier and image
+docker ps -as
+docker rm f7
+docker rmi d2
+
